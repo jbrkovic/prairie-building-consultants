@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <header>
-    <img src="Picture1.png" alt="Prairie Building Consultants Logo" class="logo">
-    <h1>Prairie Building Consultants</h1>
+        <img src="Picture1.png" alt="Prairie Building Consultants Logo" class="logo">
     </header>
 
     
@@ -33,13 +32,11 @@
         header {
             background: linear-gradient(45deg, #2c3e50, #34495e);
             color: white;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             height: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
+            overflow: hidden; /* important */
         }
         nav {
             background-color: #34495e;
@@ -96,8 +93,10 @@
             font-size: 0.8em;
         }
         .logo {
-            height: 50px;
+            height: 100%;
+            max-height: 80px;
             width: auto;
+            object-fit: contain;
         }
     </style>
 </head>
